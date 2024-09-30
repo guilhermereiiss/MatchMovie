@@ -1,0 +1,26 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color:var(--cor-primaria);
+}
+
+a  {
+  text-decoration: none;
+}
+
+
+:root {
+  --cor-primaria: #ffffff;
+  --cor-secundaria:#281259;
+  --cor-terciaria: #000000;
+  --cor-button-hover: #9F2CBF;
+}
+
+html[data-tema="escuro"]{
+  --cor-primaria: #070926;
+  --cor-secundaria:#281259;
+  --cor-terciaria: #ffffff;
+  --cor-button-hover: #9F2CBF;
+}
