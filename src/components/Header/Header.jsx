@@ -30,11 +30,11 @@ export default function Header() {
                             <Link to="/MatchMovie/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/MatchMovie/favoritos">Favoritos</Link>
+                            <Link to="/MatchMovie/favoritos">Favoritos/Recomendações</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/MatchMovie/recomendados">Recomendados</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
                 <button onClick={() => {

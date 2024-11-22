@@ -6,7 +6,7 @@ import {
 import Home from "../pages/Home/Home"
 import Favoritos from "../pages/Favoritos/Favoritos";
 import NotFound from "../pages/notFound/notFound";
-import Recomendados from "../pages/Recomendados/Recomendados";
+
 import Detalhes from "../pages/Detalhes/Detalhes"
 
 const router = createBrowserRouter([
@@ -21,10 +21,6 @@ const router = createBrowserRouter([
     {
         path: "/MatchMovie/favoritos",
         element: <Favoritos/>,
-    },
-    {
-        path: "/MatchMovie/recomendados",
-        element: <Recomendados/>,
     },
     {
         path: "/MatchMovie/detalhes/:id",

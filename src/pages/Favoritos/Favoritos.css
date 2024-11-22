@@ -89,6 +89,8 @@
 }
 
 
+
+
 @media (max-width: 768px) {
     .movie-card {
         width: 90%;
@@ -109,3 +111,5 @@
         font-size: 12px;
     }
 }
+
+

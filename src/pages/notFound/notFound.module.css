@@ -5,8 +5,8 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background-color:var(--cor-primaria); 
-    color: rgb(255, 255, 255); 
+    background-color: var(--cor-primaria);
+    color: rgb(255, 255, 255);
 }
 
 .container p {
@@ -22,13 +22,13 @@
 .descricao {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    
+
 }
 
 .botao_voltar {
     text-decoration: none;
     padding: 10px 20px;
-    background-color: var(--cor-secundaria); 
+    background-color: var(--cor-secundaria);
     color: white;
     border-radius: 5px;
     font-size: 1rem;
@@ -37,5 +37,5 @@
 }
 
 .botao_voltar:hover {
-    background-color: var(--cor-button-hover) 
+    background-color: var(--cor-button-hover)
 }
