@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -9,6 +10,7 @@ export default function FilmesGerais() {
     const [series, setSeries] = useState([]);
     const [favoritos, setFavoritos] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const [isSearchActive, setIsSearchActive] = useState(false);  
     const apiKey = "12374ecb147586c8d10ec01440db879d";
 
     const getFilmesESeries = async (search = '') => {
@@ -118,13 +120,19 @@ export default function FilmesGerais() {
     return (
         <div className="geral">
             <div className="search-container">
-                <input
-                    type="text"
-                    placeholder="Buscar filmes ou séries..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)} 
-                    className="search-input"
-                />
+                <div
+                    className={`search-input-container ${isSearchActive ? 'active' : ''}`}
+                    onClick={() => setIsSearchActive(true)}  
+                >
+                    <i className="fa fa-search" style={{ fontSize: '20px', color: '#aaa' }}></i>  {/* Ícone de busca */}
+                    <input
+                        type="text"
+                        placeholder="Buscar filmes ou séries..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="search-input"
+                    />
+                </div>
             </div>
             <div className="movie-container">
                 {movies.map((movie) => renderMovieCard(movie, 'movie'))}
