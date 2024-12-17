@@ -1,7 +1,7 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import FilmesGerais from "../src/Filmes/Filmes";
+import FilmesGerais from "./src/Filmes/Filmes";
 import axios from "axios";
-import { adicionarFavorito, removerFavorito, obterFavoritos } from "./components/Favoritar/FavoritarFunc";
+import { adicionarFavorito, removerFavorito, obterFavoritos } from "./src/components/Favoritar/FavoritarFunc";
 
 jest.mock("axios");
 jest.mock("../components/Favoritar/FavoritarFunc", () => ({
